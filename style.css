@@ -1,27 +1,31 @@
+body { /*Alterar a fonte do texto AULA 5*/
+    font-family: 'Poppins', sans-serif; /*propriedade font-family: valores*/
+}
+/*AREA DESTINADA AO CABEÇALHO*/
 .cabecalho {
-    background-color: #424E61;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
+    background-color: #424E61; /*só uma cor*/
+    color: white; /*cor da fonte ou do texto */
+    display: flex; /*posiciona conteúdos*/
+    justify-content: space-around; /*ajusta os conteúdos ao redor*/
+    align-items: center; /*centraliza o texto e relação a altura da pg*/
+    padding: 24px 0; /*espaçamento interno*/
 }
  .cabecalho-imagem{
-    width: 20%;
+    width: 20%; /*altera o tamanho da imagem*/
 }
 .cabecalho-lista-item{
-    display: inline-block; 
-    margin: 0 16px;
+    display: inline-block; /*posiciona os conteúdos em linha */
+    margin: 0 16px; /*espaçameto externo*/
     padding:  24px 0;
-    font-size: 24px;
+    font-size: 24px; /*tamano da fonte*/
 }
-* {
+* { /*Formato de espaçamento padrão*/
     margin: 0;
     padding: 0;
 }
-
+/*AREA DESTINA A ESCOLA*/
 .escola{
-    background-image: linear-gradient(#424E61,#3bb4ed);
+    background-image: linear-gradient(#424E61,#3bb4ed); /*cores em degrade */
     color: white;
     display: flex;
     justify-content: center;
@@ -31,9 +35,59 @@
 .escola-imagem{
         width: 25%;
 }
-.escola-div-conteudo{
+.escola-div-conteudo{ /*a taga DIV é divisões*/
     width: 35%;
 }
 .escola-titulo{
     padding: 24px 0;
+}
+/*AREA DESTINADA AOS ESTUDANTES*/
+.estudante-titulo{ /*Espaçar o titulo*/
+    text-align: center;
+    padding: 50px 0;
+}
+.estudante-imagem{
+    width: 120px;
+}
+.estudante-icone{
+    width: 24px;
+    padding: 4px 8px; /*Espaços entre os icones*/
+}
+.estudante-div{ /*Divide a seção estudante*/
+    text-align: center;
+    padding: 16px 0; /*Espaços entre as imagens estudantes*/
 } 
+.estudante-todos{
+    display: grid; /*display diz como sera exebido, grid sera em tabela*/
+    grid-template-columns: 20% 20% 20% 20%; /*Define quantidade de colunas e espaço*/
+}
+/* SUGESTÃO DO RCO, pois só tem um rodapé;
+footer{
+    background-color: black;
+    padding: 15px 0;
+    text-align: center;
+    }
+        */
+.rodape{
+    background-color: black; /*fundo preto */
+    text-align: center; /*alinhar a imagem ao centro*/
+}
+.rodape-imagem{
+    height: 60px; /*Altura da imagem*/
+    padding: 12px 0; /*Espaçamento interno*/
+} 
+
+
+/*PARTES DO HTML:
+ <ul class="cabecalho-lista-item">
+        <li class="cabecalho-lista-item">Estudante</li> ANTES
+        <li class="cabecalho-lista-item">Escola</li>    ANTES
+
+        <li class="cabecalho-lista-item">
+          <a href="#escola">Escola</a> </li>
+        <li class="cabecalho-lista-item">
+          <a href="#estudante">Estudante</a> </li>
+
+    </ul>
+
+*/
